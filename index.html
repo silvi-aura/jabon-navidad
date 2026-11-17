@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jabones de Navidad del Mundo — Silvi Aura</title>
+<meta name="description" content="30 diseños de jabones navideños de autor para crear desde cero, regalar y emprender. 9 capítulos de fundamentos, 6 colecciones y 2 bonos de regalo. USD 11,99.">
+<meta property="og:title" content="Jabones de Navidad del Mundo">
+<meta property="og:description" content="30 jabones navideños de autor para crear desde cero, regalar y emprender, con 2 bonos de regalo.">
+<meta property="og:image" content="img/portada.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter:wght@400;500;600;700;800&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
+<style>:root{
+  --bordo:#7A1626; --bordo-2:#5E0F1C; --verde:#1F4D36; --verde-2:#163A28;
+  --oro:#C9A24A; --oro-2:#E7CF8E; --crema:#FBF6EE; --crema-2:#F4EADB;
+  --tinta:#2B1D16; --muted:#6E5A4B; --linea:#E6D6BB;
+  --color-primary:var(--bordo); --color-text-muted:var(--muted);
+  --text-sm:.92rem; --radius:18px;
+  --sombra:0 18px 40px -18px rgba(60,20,10,.35);
+  --serif:'Fraunces',Georgia,serif; --sans:'Inter',system-ui,sans-serif; --script:'Dancing Script',cursive;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--tinta);background:var(--crema);line-height:1.65;font-size:17px;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+.container{width:min(1120px,92%);margin:0 auto}
+.narrow{width:min(780px,92%);margin:0 auto}
+h1,h2,h3{font-family:var(--serif);line-height:1.15;color:var(--verde-2);font-weight:600}
+h2{font-size:clamp(1.8rem,4vw,2.6rem);margin-bottom:1rem}
+h3{font-size:1.3rem;margin-bottom:.5rem}
+p{margin-bottom:1rem}
+.kicker{display:inline-block;font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:var(--bordo);margin-bottom:.8rem}
+.script{font-family:var(--script);color:var(--bordo);font-weight:700}
+.center{text-align:center}
+.lead{font-size:1.12rem;color:var(--muted);max-width:720px;margin:0 auto 1.4rem}
+
+/* barra superior */
+.topbar{background:var(--bordo);color:#fff;text-align:center;font-size:.9rem;padding:.6rem 1rem;font-weight:500}
+.topbar strong{color:var(--oro-2)}
+
+/* secciones */
+.section{padding:clamp(3.5rem,8vw,6rem) 0}
+.sec-a{background:var(--crema)}
+.sec-b{background:var(--crema-2)}
+.sec-c{background:linear-gradient(160deg,var(--verde) 0%,var(--verde-2) 100%);color:#F3EBDD}
+.sec-c h2,.sec-c h3{color:#fff}
+.sec-c .kicker{color:var(--oro-2)}
+.sec-d{background:linear-gradient(160deg,var(--bordo) 0%,var(--bordo-2) 100%);color:#F8EDE6}
+.sec-d h2,.sec-d h3{color:#fff}
+.sec-d .kicker{color:var(--oro-2)}
+.adorno{display:flex;align-items:center;justify-content:center;gap:.8rem;color:var(--oro);margin:0 auto 1rem}
+.adorno::before,.adorno::after{content:"";width:60px;height:1px;background:currentColor}
+
+/* botones */
+.btn-primary{display:inline-flex;align-items:center;gap:.6rem;background:linear-gradient(180deg,#9A1E31,var(--bordo));color:#fff;text-decoration:none;font-weight:700;font-size:1.08rem;padding:1.05rem 2rem;border-radius:999px;box-shadow:0 12px 26px -10px rgba(122,22,38,.7),inset 0 -2px 0 rgba(0,0,0,.18);border:2px solid var(--oro);transition:transform .2s,box-shadow .2s}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 18px 30px -12px rgba(122,22,38,.8)}
+.btn-primary svg{width:20px;height:20px}
+.sec-d .btn-primary,.sec-c .btn-primary{background:linear-gradient(180deg,#E9CF86,var(--oro));color:var(--bordo-2)}
+.trust-row{display:flex;flex-wrap:wrap;gap:.6rem 1.4rem;margin-top:1.2rem;font-size:.88rem;color:var(--muted)}
+.trust-row span{display:inline-flex;align-items:center;gap:.4rem}
+.trust-row svg{width:17px;height:17px;color:var(--verde)}
+.sec-c .trust-row,.sec-d .trust-row{color:#EADFCB;justify-content:center}
+.sec-c .trust-row svg,.sec-d .trust-row svg{color:var(--oro-2)}
+
+/* hero */
+.hero{background:radial-gradient(ellipse at 80% 20%,rgba(201,162,74,.18),transparent 55%),linear-gradient(180deg,#FFFBF4,var(--crema));padding:clamp(2.5rem,6vw,4.5rem) 0 clamp(3rem,7vw,5rem)}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:3rem;align-items:center}
+.hero h1{font-size:clamp(2.4rem,6vw,4.1rem);color:var(--verde-2);margin-bottom:.4rem}
+.hero h1 .script{display:block;font-size:.85em;margin-top:.1rem}
+.hero .sub{font-family:var(--serif);font-size:clamp(1.15rem,2.4vw,1.45rem);color:var(--bordo);margin-bottom:1.1rem;font-style:italic}
+.hero p.txt{color:var(--muted);font-size:1.08rem;max-width:560px}
+.hero-img{position:relative}
+.hero-img img{border-radius:14px;box-shadow:0 30px 60px -25px rgba(60,20,10,.55);transform:rotate(1.5deg);border:6px solid #fff}
+.badge{position:absolute;left:-18px;bottom:28px;background:var(--verde);color:#fff;border:2px solid var(--oro);border-radius:14px;padding:.7rem 1rem;font-weight:700;font-size:.9rem;box-shadow:var(--sombra);line-height:1.3}
+.badge b{display:block;font-family:var(--serif);font-size:1.5rem;color:var(--oro-2)}
+.hero-checks{list-style:none;margin:1rem 0 1.6rem;display:grid;gap:.45rem}
+.hero-checks li{display:flex;gap:.55rem;align-items:flex-start}
+.hero-checks svg{flex:none;width:20px;height:20px;color:var(--verde);margin-top:.2rem}
+
+/* números */
+.stats{background:var(--verde-2);color:#fff;padding:1.6rem 0}
+.stats-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1rem;text-align:center}
+.stats b{display:block;font-family:var(--serif);font-size:2rem;color:var(--oro-2);line-height:1.1}
+.stats span{font-size:.85rem;color:#DCE7DF}
+
+/* dolor */
+.pain-list{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:2rem 0}
+.pain{display:flex;gap:.8rem;background:#fff;border:1px solid var(--linea);border-radius:14px;padding:1rem 1.1rem}
+.pain svg{flex:none;width:22px;height:22px;color:var(--bordo);margin-top:.15rem}
+.quote-box{background:#fff;border-left:4px solid var(--oro);border-radius:0 14px 14px 0;padding:1.4rem 1.6rem;font-family:var(--serif);font-size:1.18rem;color:var(--verde-2);font-style:italic;box-shadow:var(--sombra)}
+
+/* pilares */
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:2.4rem}
+.pillar{background:rgba(255,255,255,.07);border:1px solid rgba(231,207,142,.35);border-radius:var(--radius);padding:1.8rem 1.5rem;text-align:center}
+.pillar .num{font-family:var(--serif);font-size:2.6rem;color:var(--oro-2);line-height:1}
+.pillar p{color:#E4DCCB;margin:0}
+
+/* galería */
+.coll{margin-top:3rem}
+.coll-head{display:flex;align-items:baseline;gap:1rem;flex-wrap:wrap;border-bottom:1px solid var(--linea);padding-bottom:.6rem;margin-bottom:1.2rem}
+.coll-head .n{font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:#fff;background:var(--bordo);padding:.25rem .7rem;border-radius:999px}
+.coll-head h3{margin:0;font-size:1.55rem}
+.coll-head p{margin:0;color:var(--muted);font-size:.95rem;flex-basis:100%}
+.models{display:grid;grid-template-columns:repeat(5,1fr);gap:1rem}
+.model{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 10px 24px -16px rgba(60,20,10,.45);border:1px solid var(--linea)}
+.model img{aspect-ratio:22/21;object-fit:cover;width:100%}
+.model div{padding:.65rem .75rem .8rem}
+.model b{display:block;font-family:var(--serif);font-weight:600;color:var(--verde-2);font-size:1rem;line-height:1.25}
+.model span{font-size:.8rem;color:var(--muted)}
+.tip{margin-top:2.4rem;background:var(--verde);color:#fff;border-radius:var(--radius);padding:1.4rem 1.6rem;display:flex;gap:1rem;align-items:flex-start}
+.tip svg{flex:none;width:26px;height:26px;color:var(--oro-2);margin-top:.15rem}
+.tip p{margin:0}
+
+/* ficha */
+.split{display:grid;grid-template-columns:.85fr 1.15fr;gap:3rem;align-items:center}
+.page-shot{border-radius:12px;border:6px solid #fff;box-shadow:0 30px 60px -28px rgba(60,20,10,.6)}
+.feat-list{list-style:none;display:grid;gap:.9rem;margin-top:1.2rem}
+.feat-list li{display:flex;gap:.8rem}
+.feat-list .ic{flex:none;width:34px;height:34px;border-radius:50%;background:var(--bordo);color:#fff;display:grid;place-items:center}
+.feat-list .ic svg{width:18px;height:18px}
+.feat-list b{color:var(--verde-2)}
+
+/* contenido */
+.toc{display:grid;grid-template-columns:1fr 1fr;gap:1.6rem;margin-top:2rem}
+.toc-card{background:#fff;border:1px solid var(--linea);border-radius:var(--radius);padding:1.8rem;box-shadow:var(--sombra)}
+.toc-card h3{display:flex;align-items:center;gap:.6rem}
+.toc-card h3 small{font-family:var(--sans);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;background:var(--oro);color:#fff;padding:.2rem .6rem;border-radius:999px}
+.toc-card ol{list-style:none;counter-reset:c;margin-top:1rem;display:grid;gap:.75rem}
+.toc-card li{counter-increment:c;display:grid;grid-template-columns:34px 1fr;gap:.6rem;font-size:.95rem;color:var(--muted)}
+.toc-card li::before{content:counter(c);width:28px;height:28px;border-radius:50%;background:var(--crema-2);border:1px solid var(--oro);color:var(--bordo);font-weight:700;font-size:.85rem;display:grid;place-items:center}
+.toc-card li b{display:block;color:var(--tinta)}
+.toc-card.colls li::before{background:var(--verde);color:#fff;border-color:var(--verde)}
+
+/* para quién */
+.fit{display:grid;grid-template-columns:1fr 1fr;gap:1.6rem;margin-top:2rem}
+.fit-card{border-radius:var(--radius);padding:1.8rem}
+.fit-yes{background:#fff;border:2px solid var(--verde)}
+.fit-no{background:#fff;border:2px dashed #C9B9A3}
+.fit-card ul{list-style:none;display:grid;gap:.75rem;margin-top:.8rem}
+.fit-card li{display:flex;gap:.6rem}
+.fit-card svg{flex:none;width:21px;height:21px;margin-top:.2rem}
+.fit-yes svg{color:var(--verde)}
+.fit-no svg{color:#A68E73}
+
+/* bonos */
+.bonus{display:grid;grid-template-columns:240px 1fr;gap:2rem;align-items:center;background:#fff;border-radius:var(--radius);padding:1.8rem;margin-top:1.8rem;border:1px solid var(--linea);box-shadow:var(--sombra)}
+.bonus img{border-radius:10px;box-shadow:0 18px 30px -18px rgba(60,20,10,.6)}
+.bonus .tag{display:inline-block;background:var(--bordo);color:#fff;font-size:.75rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:.25rem .8rem;border-radius:999px;margin-bottom:.6rem}
+.bonus ul{list-style:none;display:grid;gap:.5rem;margin:.6rem 0 1rem}
+.bonus li{display:flex;gap:.5rem;font-size:.97rem}
+.bonus li svg{flex:none;width:19px;height:19px;color:var(--verde);margin-top:.25rem}
+.bonus .val{font-size:.9rem;color:var(--muted)}
+.bonus .val s{margin-right:.4rem}
+.bonus .val b{color:var(--verde)}
+
+/* oferta */
+.offer{max-width:640px;margin:2rem auto 0;background:#FFFCF6;color:var(--tinta);border-radius:24px;padding:2.4rem 2rem;border:3px solid var(--oro);box-shadow:0 30px 60px -25px rgba(0,0,0,.55);text-align:center;position:relative}
+.offer-ribbon{position:absolute;top:-16px;left:50%;transform:translateX(-50%);background:var(--oro);color:var(--bordo-2);font-weight:800;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;padding:.35rem 1.1rem;border-radius:999px;white-space:nowrap}
+.offer h3{color:var(--verde-2);font-size:1.5rem}
+.stack{list-style:none;text-align:left;margin:1.4rem 0;border-top:1px solid var(--linea)}
+.stack li{display:flex;justify-content:space-between;gap:1rem;padding:.75rem 0;border-bottom:1px solid var(--linea);font-size:.98rem}
+.stack li span:first-child{display:flex;gap:.5rem}
+.stack svg{flex:none;width:19px;height:19px;color:var(--verde);margin-top:.2rem}
+.stack .v{white-space:nowrap;color:var(--muted)}
+.stack .gift{color:var(--bordo);font-weight:700}
+.total{color:var(--muted);font-size:.98rem}
+.total s{font-weight:600}
+.price{font-family:var(--serif);font-size:clamp(3rem,9vw,4.2rem);color:var(--bordo);font-weight:700;line-height:1;margin:.3rem 0 .2rem}
+.price small{font-size:.4em;vertical-align:super;margin-right:.2rem}
+.price-note{font-size:.88rem;color:var(--muted);margin-bottom:1.4rem}
+.offer .btn-primary{width:100%;justify-content:center}
+.offer .trust-row{justify-content:center;color:var(--muted)}
+.offer .trust-row svg{color:var(--verde)}
+.pay-note{font-size:.82rem;color:var(--muted);margin-top:1rem}
+
+/* garantía */
+.guar-wrap{max-width:720px;margin:0 auto;text-align:center}
+.guar-seal{width:170px;height:170px;margin:0 auto 1.2rem;filter:drop-shadow(0 14px 22px rgba(60,20,10,.3))}
+
+/* autora */
+.author-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:3rem;align-items:center}
+.author-photo{position:relative}
+.author-photo img{border-radius:var(--radius);box-shadow:var(--sombra);border:6px solid #fff}
+.author-photo .sig{position:absolute;right:-10px;bottom:-14px;background:#fff;font-family:var(--script);font-size:1.9rem;color:var(--bordo);padding:.2rem 1.1rem;border-radius:12px;box-shadow:var(--sombra)}
+.author-role{color:var(--bordo);font-weight:600;margin:-.4rem 0 1rem}
+.author-creds{list-style:none;display:grid;gap:.55rem;margin-top:1rem}
+.author-creds li{display:flex;gap:.55rem}
+.author-creds svg{flex:none;width:20px;height:20px;color:var(--verde);margin-top:.2rem}
+
+/* faq */
+.faq{margin-top:2rem;display:grid;gap:.8rem}
+.faq-item{background:#fff;border:1px solid var(--linea);border-radius:14px;overflow:hidden}
+.faq-q{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1.1rem 1.3rem;font-weight:600;cursor:pointer;color:var(--verde-2)}
+.faq-icon{flex:none;width:20px;height:20px;color:var(--bordo);transition:transform .25s}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease}
+.faq-a p{padding:0 1.3rem 1.1rem;margin:0;color:var(--muted)}
+.faq-item.open .faq-a{max-height:400px}
+.faq-item.open .faq-icon{transform:rotate(45deg)}
+
+/* cta final */
+.cta-final{text-align:center}
+.cta-final h2{max-width:760px;margin:0 auto 1rem}
+.cta-final p{max-width:640px;margin:0 auto 1.6rem;color:#F1E4DA}
+
+/* legal y footer */
+.legal{background:var(--crema-2);padding:1.8rem 0;font-size:.8rem;color:var(--muted);text-align:center}
+.legal p{margin:0}
+.legal a{color:var(--bordo)}
+.footer{background:var(--verde-2);color:#CFDCD3;text-align:center;padding:2.6rem 0 6rem}
+.wordmark{display:inline-flex;flex-direction:column;text-decoration:none;line-height:1.1}
+.wm-title{font-family:var(--serif);font-size:1.7rem;color:#fff;font-weight:600}
+.wm-sub{font-family:var(--script);font-size:1.5rem;color:var(--oro-2)}
+.wm-author{font-size:.75rem;letter-spacing:.28em;text-transform:uppercase;margin-top:.4rem}
+.sign{font-family:var(--script);font-size:1.3rem;color:var(--oro-2);margin:1rem 0}
+.footer-links{display:flex;justify-content:center;gap:1.6rem;margin-bottom:1rem;font-size:.92rem}
+.footer-links a{color:#fff}
+.cp{font-size:.78rem;color:#9FB5A7}
+
+/* barra fija celular */
+.sticky{position:fixed;left:0;right:0;bottom:0;background:rgba(22,58,40,.97);padding:.7rem 4%;display:none;align-items:center;justify-content:space-between;gap:1rem;z-index:50;transform:translateY(110%);transition:transform .3s;border-top:2px solid var(--oro)}
+.sticky.show{transform:none}
+.sticky .p{color:#fff;font-size:.85rem;line-height:1.2}
+.sticky .p b{display:block;font-family:var(--serif);font-size:1.35rem;color:var(--oro-2)}
+.sticky .btn-primary{padding:.75rem 1.2rem;font-size:.95rem}
+
+/* animación */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s,transform .7s}
+.reveal.in{opacity:1;transform:none}
+
+@media (max-width:960px){
+  .models{grid-template-columns:repeat(3,1fr)}
+  .stats-grid{grid-template-columns:repeat(3,1fr)}
+  .stats-grid div:nth-child(n+4){grid-column:span 1}
+}
+@media (max-width:820px){
+  body{font-size:16px}
+  .hero-grid,.split,.author-grid,.toc,.fit,.pain-list{grid-template-columns:1fr}
+  .hero-grid{gap:2.2rem}
+  .hero-img{max-width:380px;margin:0 auto;order:-1}
+  .pillars{grid-template-columns:1fr}
+  .bonus{grid-template-columns:1fr;text-align:left}
+  .bonus img{max-width:220px;margin:0 auto}
+  .author-photo{max-width:340px;margin:0 auto}
+  .split .page-shot{max-width:400px;margin:0 auto}
+  .sticky{display:flex}
+  .btn-primary{width:100%;justify-content:center}
+  .sticky .btn-primary{width:auto}
+}
+@media (max-width:560px){
+  .models{grid-template-columns:repeat(2,1fr)}
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+  .stats-grid div:last-child{grid-column:span 2}
+  .badge{left:6px}
+  .offer{padding:2.2rem 1.2rem}
+  .stack li{font-size:.92rem}
+}
+.split>*,.author-grid>*,.hero-grid>*{min-width:0}
+.page-shot{width:100%}
+</style>
+</head>
+<body>
+<!-- 1. BARRA -->
+<div class="topbar">Edición Navidad · <strong>USD 11,99</strong> con <strong>2 bonos de regalo</strong> · Acceso inmediato</div>
+
+<!-- 2. HERO -->
+<header class="hero">
+  <div class="container hero-grid">
+    <div class="reveal">
+      <span class="kicker">Guía completa · Edición Navidad</span>
+      <h1>Jabones de Navidad <span class="script">del Mundo</span></h1>
+      <p class="sub">30 diseños de autor para crear desde cero, regalar y emprender</p>
+      <p class="txt">Este año, el regalo más lindo lo vas a crear con tus propias manos. Aprendé la técnica que usan las jaboneras profesionales y recorré las tradiciones navideñas del mundo en 30 jabones exclusivos.</p>
+      <ul class="hero-checks">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Sin soda cáustica y sin semanas de curado: tu jabón está listo en 24 horas.</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Cada modelo con materiales en cantidades exactas y paso a paso numerado.</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Una guía para regalar o vender cada jabón, con rango de precio orientativo.</li>
+      </ul>
+      <a href="https://pay.hotmart.com/W108539330A?checkoutMode=10" class="btn-primary js-pago">Quiero crear mis jabones <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <div class="trust-row">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4M12 3l7 4v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V7z"/></svg> Compra segura</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M9 14l-1 8 4-3 4 3-1-8"/></svg> Garantía de 7 días</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9z"/></svg> Acceso inmediato</span>
+      </div>
+    </div>
+    <div class="hero-img reveal">
+      <img src="img/portada.webp" alt="Portada de la guía Jabones de Navidad del Mundo, de Silvi Aura" width="620" height="876">
+      <div class="badge"><b>30</b>modelos en<br>6 colecciones</div>
+    </div>
+  </div>
+</header>
+
+<!-- 3. NÚMEROS -->
+<section class="stats">
+  <div class="container stats-grid">
+    <div><b>30</b><span>jabones exclusivos</span></div>
+    <div><b>6</b><span>colecciones del mundo</span></div>
+    <div><b>9</b><span>capítulos de fundamentos</span></div>
+    <div><b>20</b><span>mezclas de aromas</span></div>
+    <div><b>2</b><span>bonos de regalo</span></div>
+  </div>
+</section>
+
+<!-- 4. DOLOR -->
+<section class="section sec-a">
+  <div class="narrow">
+    <div class="center reveal">
+      <span class="kicker">¿Te suena?</span>
+      <h2>Querés hacer jabones lindos, pero algo siempre sale mal</h2>
+    </div>
+    <div class="pain-list">
+      <div class="pain reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M15 9l-6 6M9 9l6 6"/></svg><span>El jabón se llena de gotitas a los pocos días: «suda» y se arruina el diseño.</span></div>
+      <div class="pain reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M15 9l-6 6M9 9l6 6"/></svg><span>Te quedan burbujas en la superficie o las capas se separan al usarlo.</span></div>
+      <div class="pain reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M15 9l-6 6M9 9l6 6"/></svg><span>Las incrustaciones se derriten y los aditivos se van todos al fondo.</span></div>
+      <div class="pain reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M15 9l-6 6M9 9l6 6"/></svg><span>No sabés cuánta base, cuánta fragancia ni cuánto colorante lleva cada molde.</span></div>
+      <div class="pain reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M15 9l-6 6M9 9l6 6"/></svg><span>El jabón blanco se pone marrón con los días y no entendés por qué.</span></div>
+      <div class="pain reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M15 9l-6 6M9 9l6 6"/></svg><span>Querés regalar o vender en Navidad y no sabés cómo presentarlos ni cuánto cobrar.</span></div>
+    </div>
+    <div class="quote-box reveal">La diferencia entre un jabón casero y un jabón de perfumería de diseño no es el talento: son los fundamentos bien aprendidos y un diseño con historia.</div>
+  </div>
+</section>
+
+<!-- 5. SOLUCIÓN -->
+<section class="section sec-c">
+  <div class="container">
+    <div class="narrow center reveal">
+      <span class="kicker">Te presento la guía</span>
+      <h2>El jabón artesanal es uno de los regalos más queridos del mundo</h2>
+      <p>En Laponia envuelven el jabón en lana; en Marsella lo sellan en cubos verdes; en Alemania, los mercaditos navideños se llenan de jabones con forma de galleta; y acá brindamos en el patio bajo las estrellas. <strong>Jabones de Navidad del Mundo</strong> te lleva de la mano desde cero hasta una colección navideña completa, lista para regalar o para empezar tu propio emprendimiento.</p>
+    </div>
+    <div class="pillars">
+      <div class="pillar reveal"><div class="num">1</div><h3>Fundamentos paso a paso</h3><p>Qué base elegir, cómo calcular cantidades exactas, cómo dar aroma y color de forma segura y cómo evitar los errores más comunes.</p></div>
+      <div class="pillar reveal"><div class="num">2</div><h3>30 modelos exclusivos</h3><p>Un recorrido por el mundo en seis colecciones, del jabón envuelto en lana de Laponia al kintsugi japonés.</p></div>
+      <div class="pillar reveal"><div class="num">3</div><h3>Listos para regalar o vender</h3><p>Cada modelo trae su toque premium y una guía para regalarlo o venderlo: a quién ofrecerlo, cómo presentarlo y un precio orientativo.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. GALERÍA -->
+<section class="section sec-a" id="modelos">
+  <div class="container">
+    <div class="center reveal">
+      <span class="kicker">Los 30 modelos</span>
+      <h2>Un viaje por la Navidad del mundo en 30 jabones</h2>
+      <p class="lead">Seis colecciones completas, cada una con su estilo. Estos son los jabones que vas a aprender a hacer:</p>
+    </div>
+    <div class="coll reveal"><div class="coll-head"><span class="n">Colección 1</span><h3>Norte Nevado</h3><p>Dinamarca, Suecia, Islandia, Finlandia y Noruega. Jabones sobrios y cálidos: leche de cabra, avena, verdes de abeto y blancos de invierno.</p></div><div class="models"><div class="model"><img src="img/m01.webp" alt="Jabón Hygge de Copenhague" loading="lazy" width="440" height="420"><div><b>1. Hygge de Copenhague</b><span>Dinamarca</span></div></div><div class="model"><img src="img/m02.webp" alt="Jabón Corona de Santa Lucía" loading="lazy" width="440" height="420"><div><b>2. Corona de Santa Lucía</b><span>Suecia</span></div></div><div class="model"><img src="img/m03.webp" alt="Jabón Aurora Boreal" loading="lazy" width="440" height="420"><div><b>3. Aurora Boreal</b><span>Islandia y Finlandia</span></div></div><div class="model"><img src="img/m04.webp" alt="Jabón Fieltro de Laponia" loading="lazy" width="440" height="420"><div><b>4. Fieltro de Laponia</b><span>Finlandia</span></div></div><div class="model"><img src="img/m05.webp" alt="Jabón Globo de Nieve de Bergen" loading="lazy" width="440" height="420"><div><b>5. Globo de Nieve de Bergen</b><span>Noruega</span></div></div></div></div>
+<div class="coll reveal"><div class="coll-head"><span class="n">Colección 2</span><h3>Europa Clásica</h3><p>Alemania, Inglaterra, Francia e Italia. Elegante y con historia, para regalar algo que parezca comprado en una perfumería europea.</p></div><div class="models"><div class="model"><img src="img/m06.webp" alt="Jabón Calendario de Adviento de Múnich" loading="lazy" width="440" height="420"><div><b>6. Calendario de Adviento de Múnich</b><span>Alemania</span></div></div><div class="model"><img src="img/m07.webp" alt="Jabón Mercadito de Núremberg" loading="lazy" width="440" height="420"><div><b>7. Mercadito de Núremberg</b><span>Alemania</span></div></div><div class="model"><img src="img/m08.webp" alt="Jabón Camafeo Victoriano" loading="lazy" width="440" height="420"><div><b>8. Camafeo Victoriano</b><span>Inglaterra</span></div></div><div class="model"><img src="img/m09.webp" alt="Jabón Marsella de Navidad" loading="lazy" width="440" height="420"><div><b>9. Marsella de Navidad</b><span>Francia</span></div></div><div class="model"><img src="img/m10.webp" alt="Jabón Venecia Dorada" loading="lazy" width="440" height="420"><div><b>10. Venecia Dorada</b><span>Italia</span></div></div></div></div>
+<div class="coll reveal"><div class="coll-head"><span class="n">Colección 3</span><h3>Pastelería del Mundo</h3><p>Cinco postres navideños de distintos países, hechos de jabón. De lo que más se comparte en redes.</p></div><div class="models"><div class="model"><img src="img/m11.webp" alt="Jabón Galletas de Jengibre" loading="lazy" width="440" height="420"><div><b>11. Galletas de Jengibre</b><span>Alemania y Estados Unidos</span></div></div><div class="model"><img src="img/m12.webp" alt="Jabón Bûche de Noël" loading="lazy" width="440" height="420"><div><b>12. Bûche de Noël</b><span>Francia</span></div></div><div class="model"><img src="img/m13.webp" alt="Jabón Panettone Milanés" loading="lazy" width="440" height="420"><div><b>13. Panettone Milanés</b><span>Italia</span></div></div><div class="model"><img src="img/m14.webp" alt="Jabón Bombones Suizos" loading="lazy" width="440" height="420"><div><b>14. Bombones Suizos</b><span>Suiza</span></div></div><div class="model"><img src="img/m15.webp" alt="Jabón Turrón de Alicante" loading="lazy" width="440" height="420"><div><b>15. Turrón de Alicante</b><span>España</span></div></div></div></div>
+<div class="coll reveal"><div class="coll-head"><span class="n">Colección 4</span><h3>Navidad Latina</h3><p>México, Argentina, los Andes y Brasil. Color, fiesta y Navidad de verano: nuestras propias tradiciones.</p></div><div class="models"><div class="model"><img src="img/m16.webp" alt="Jabón Flor de Nochebuena" loading="lazy" width="440" height="420"><div><b>16. Flor de Nochebuena</b><span>México</span></div></div><div class="model"><img src="img/m17.webp" alt="Jabón Talavera de Puebla" loading="lazy" width="440" height="420"><div><b>17. Talavera de Puebla</b><span>México</span></div></div><div class="model"><img src="img/m18.webp" alt="Jabón Brindis de Nochebuena" loading="lazy" width="440" height="420"><div><b>18. Brindis de Nochebuena</b><span>Argentina</span></div></div><div class="model"><img src="img/m19.webp" alt="Jabón Aguayo Andino" loading="lazy" width="440" height="420"><div><b>19. Aguayo Andino</b><span>Bolivia, Perú y el norte argentino</span></div></div><div class="model"><img src="img/m20.webp" alt="Jabón Natal Tropical" loading="lazy" width="440" height="420"><div><b>20. Natal Tropical</b><span>Brasil</span></div></div></div></div>
+<div class="coll reveal"><div class="coll-head"><span class="n">Colección 5</span><h3>Adornos de Jabón</h3><p>Árboles, esferas, estrellas, piñas y copos. Jabones con forma que primero decoran la casa y después se usan.</p></div><div class="models"><div class="model"><img src="img/m21.webp" alt="Jabón Bosque Alpino" loading="lazy" width="440" height="420"><div><b>21. Bosque Alpino</b><span>Suiza</span></div></div><div class="model"><img src="img/m22.webp" alt="Jabón Esfera de Bohemia" loading="lazy" width="440" height="420"><div><b>22. Esfera de Bohemia</b><span>República Checa</span></div></div><div class="model"><img src="img/m23.webp" alt="Jabón Estrella de Belén" loading="lazy" width="440" height="420"><div><b>23. Estrella de Belén</b><span>Medio Oriente</span></div></div><div class="model"><img src="img/m24.webp" alt="Jabón Piña Nevada" loading="lazy" width="440" height="420"><div><b>24. Piña Nevada</b><span>Canadá</span></div></div><div class="model"><img src="img/m25.webp" alt="Jabón Copos de Hokkaido" loading="lazy" width="440" height="420"><div><b>25. Copos de Hokkaido</b><span>Japón</span></div></div></div></div>
+<div class="coll reveal"><div class="coll-head"><span class="n">Colección 6</span><h3>Lujo y Tendencia</h3><p>Diseño de autor para regalar a lo grande: los modelos con más valor percibido de la guía.</p></div><div class="models"><div class="model"><img src="img/m26.webp" alt="Jabón Mármol de Carrara" loading="lazy" width="440" height="420"><div><b>26. Mármol de Carrara</b><span>Italia</span></div></div><div class="model"><img src="img/m27.webp" alt="Jabón Carbón y Oro de Berlín" loading="lazy" width="440" height="420"><div><b>27. Carbón y Oro de Berlín</b><span>Alemania</span></div></div><div class="model"><img src="img/m28.webp" alt="Jabón Kintsugi" loading="lazy" width="440" height="420"><div><b>28. Kintsugi</b><span>Japón</span></div></div><div class="model"><img src="img/m29.webp" alt="Jabón Doce Uvas de la Suerte" loading="lazy" width="440" height="420"><div><b>29. Doce Uvas de la Suerte</b><span>España</span></div></div><div class="model"><img src="img/m30.webp" alt="Jabón Gema de los Zares" loading="lazy" width="440" height="420"><div><b>30. Gema de los Zares</b><span>Rusia</span></div></div></div></div>
+    <div class="tip reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><p><strong>¿Por dónde empezar?</strong> Por tres modelos de nivel inicial: Hygge de Copenhague, Marsella de Navidad y Copos de Hokkaido. Con esos tres ya dominás la técnica base, que es la mitad de la guía. Después pasás a las capas y las incrustaciones y, por último, a las técnicas especiales.</p></div>
+  </div>
+</section>
+
+<!-- 7. CÓMO ES CADA MODELO -->
+<section class="section sec-b">
+  <div class="container split">
+    <div class="reveal"><img class="page-shot" src="img/ficha.webp" alt="Vista previa de una ficha de la guía: el modelo Hygge de Copenhague" loading="lazy" width="560" height="483"></div>
+    <div class="reveal">
+      <span class="kicker">Por dentro</span>
+      <h2>Cada modelo, en una ficha clara y completa</h2>
+      <p>Todos los modelos siguen la misma estructura, para que encuentres la información siempre en el mismo lugar:</p>
+      <ul class="feat-list">
+        <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 010 20M12 2a15 15 0 000 20"/></svg></span><span><b>Su historia.</b> El país o la tradición que inspira el diseño: tu mejor argumento de venta.</span></li>
+        <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span><span><b>Nivel, tiempo y rendimiento.</b> Sabés de antemano cuánto te lleva, cuántos jabones salen y de qué peso.</span></li>
+        <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg></span><span><b>Materiales con cantidades exactas.</b> Gramos de base, de fragancia y de cada color para ese molde.</span></li>
+        <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span><span><b>Paso a paso numerado.</b> Con las temperaturas justas para cada etapa, del derretido al desmolde.</span></li>
+        <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span><b>Toque premium.</b> El detalle que hace que tu jabón parezca de perfumería de diseño.</span></li>
+        <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.6 13.4l-7.2 7.2a2 2 0 01-2.8 0L2 12V2h10l8.6 8.6a2 2 0 010 2.8z"/><path d="M7 7h.01"/></svg></span><span><b>Para regalar y vender.</b> A quién ofrecerlo, cómo presentarlo y un rango orientativo de precio.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 8. CONTENIDO -->
+<section class="section sec-a">
+  <div class="container">
+    <div class="center reveal">
+      <span class="kicker">Lo que vas a encontrar</span>
+      <h2>Una guía completa de 51 páginas a color</h2>
+    </div>
+    <div class="toc">
+      <div class="toc-card reveal">
+        <h3><small>Parte 1</small> Los fundamentos</h3>
+        <ol>
+          <li><span><b>Tu taller desde cero</b>Las herramientas que necesitás y cómo armar tu espacio en la cocina.</span></li>
+          <li><span><b>Las bases de jabón y sus temperaturas</b>Transparente, blanca, leche de cabra, karité, de suspensión y de baja sudoración: cuándo usar cada una.</span></li>
+          <li><span><b>El aroma</b>Qué fragancias son aptas para la piel, cuánta poner y cómo agregarla.</span></li>
+          <li><span><b>Color, brillo y aditivos naturales</b>Micas, colorantes, avena, arcillas y la paleta navideña del mundo.</span></li>
+          <li><span><b>Las cuentas que tenés que saber</b>Tres fórmulas simples para cualquier molde: nunca te sobra ni te falta base.</span></li>
+          <li><span><b>Las técnicas base</b>Jabón de molde, capas e incrustaciones, más 12 técnicas especiales.</span></li>
+          <li><span><b>Desmolde, conservación y control de calidad</b>Cómo evitar que tus jabones «suden» y la checklist de un jabón profesional.</span></li>
+          <li><span><b>Seguridad y antes de vender</b>Lo que tenés que saber para cuidar tu piel, la de tus clientas y tu marca.</span></li>
+          <li><span><b>Solución de problemas</b>Burbujas, capas que se separan, colores que se corren: por qué pasa y cómo arreglarlo.</span></li>
+        </ol>
+      </div>
+      <div class="toc-card colls reveal">
+        <h3><small>Parte 2</small> Las 6 colecciones</h3>
+        <ol>
+          <li><span><b>Norte Nevado</b>Escandinavia: leche de cabra, avena, verdes de abeto y el jabón envuelto en lana.</span></li>
+          <li><span><b>Europa Clásica</b>Mercaditos alemanes, camafeos victorianos, el jabón de Marsella y el oro de Venecia.</span></li>
+          <li><span><b>Pastelería del Mundo</b>Jabones-postre que provocan el clásico «¡no puedo creer que sea un jabón!».</span></li>
+          <li><span><b>Navidad Latina</b>México, Argentina, los Andes y Brasil: color, fiesta y Navidad de verano.</span></li>
+          <li><span><b>Adornos de Jabón</b>Árboles, esferas, estrellas, piñas y copos que primero decoran y después se usan.</span></li>
+          <li><span><b>Lujo y Tendencia</b>Los modelos de más valor percibido, para regalos empresariales.</span></li>
+        </ol>
+        <p style="margin:1.2rem 0 0;font-size:.95rem;color:var(--muted)">Y un cierre con un consejo clave: cómo armar una colección coherente que se vea profesional y luzca mucho más que treinta jabones sueltos.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 9. PARA QUIÉN -->
+<section class="section sec-b">
+  <div class="container">
+    <div class="center reveal">
+      <span class="kicker">¿Es para vos?</span>
+      <h2>Esta guía es para vos si…</h2>
+    </div>
+    <div class="fit">
+      <div class="fit-card fit-yes reveal">
+        <h3>Sí es para vos</h3>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Nunca hiciste un jabón y querés empezar bien desde el primer intento.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Ya hacés jabones y querés diseños originales que no tenga nadie.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Querés regalar algo hecho a mano que parezca de perfumería.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Querés armar tu propia colección navideña para emprender.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Te gusta crear con las manos y disfrutar el proceso.</li>
+        </ul>
+      </div>
+      <div class="fit-card fit-no reveal">
+        <h3>No es para vos si…</h3>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6L6 18M6 6l12 12"/></svg> Buscás hacer jabón con soda cáustica (proceso en frío o en caliente).</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6L6 18M6 6l12 12"/></svg> Querés fabricar en serie con máquinas industriales.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6L6 18M6 6l12 12"/></svg> Esperás ganancias garantizadas sin dedicarle tiempo ni práctica.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 10. BONOS -->
+<section class="section sec-a" id="bonos">
+  <div class="container">
+    <div class="center reveal">
+      <span class="kicker">Incluidos de regalo</span>
+      <h2>Además, te llevás 2 bonos</h2>
+      <p class="lead">Pensados para que tus jabones tengan un aroma único y se presenten como un regalo de perfumería.</p>
+    </div>
+    <div class="bonus reveal">
+      <img src="img/bono1.webp" alt="Portada del Bono 1: Recetario de Aromas y Aditivos" loading="lazy" width="440" height="622">
+      <div>
+        <span class="tag">Bono 1</span>
+        <h3>Recetario de Aromas y Aditivos</h3>
+        <p>Una mezcla propia es tu firma: es lo que hace que tu jabón no se parezca a ningún otro.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> 20 mezclas de autor con proporciones exactas, pensadas para los 30 modelos.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> El modelo ideal para cada mezcla y un reemplazo si no conseguís alguna fragancia.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Una tabla con los gramos de fragancia ya calculados, sin hacer cuentas.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> 12 aditivos naturales con su dosis y cómo agregar cada uno, más los aceites esenciales aptos para empezar.</li>
+        </ul>
+        <div class="val">Valor: <s>USD 7</s> <b>Hoy de regalo</b></div>
+      </div>
+    </div>
+    <div class="bonus reveal">
+      <img src="img/bono2.webp" alt="Portada del Bono 2: Etiquetas y Packaging de Regalo" loading="lazy" width="440" height="622">
+      <div>
+        <span class="tag">Bono 2</span>
+        <h3>Etiquetas y Packaging de Regalo</h3>
+        <p>Un jabón bien presentado se convierte en un regalo.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Qué tiene que decir tu etiqueta, con las precauciones listas para copiar.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> El texto para la tarjeta de regalo que acompaña cada jabón.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> 6 ideas de presentación premium, con los modelos que mejor quedan en cada una.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Para imprimir: 12 etiquetas circulares, tarjetas «Cómo cuidar tu jabón» y fajas «Jabón – No comestible».</li>
+        </ul>
+        <div class="val">Valor: <s>USD 7</s> <b>Hoy de regalo</b></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 11. OFERTA -->
+<section class="section sec-d" id="oferta">
+  <div class="container">
+    <div class="center reveal">
+      <span class="kicker">Tu Navidad empieza acá</span>
+      <h2>Todo lo que te llevás hoy</h2>
+    </div>
+    <div class="offer reveal">
+      <div class="offer-ribbon">Edición Navidad</div>
+      <h3>Jabones de Navidad del Mundo</h3>
+      <ul class="stack">
+        <li><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Guía completa: 9 capítulos de fundamentos y 30 modelos en 6 colecciones</span><span class="v">USD 11,99</span></li>
+        <li><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Bono 1: Recetario de Aromas y Aditivos</span><span class="v gift">Regalo</span></li>
+        <li><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Bono 2: Etiquetas y Packaging de Regalo</span><span class="v gift">Regalo</span></li>
+      </ul>
+      <p class="total">Valor total: <s>USD 25,99</s></p>
+      <div class="price"><small>USD</small>11,99</div>
+      <p class="price-note">Pago único · PDF a color · Acceso inmediato</p>
+      <a href="https://pay.hotmart.com/W108539330A?checkoutMode=10" class="btn-primary js-pago">Quiero mi guía y mis bonos <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <div class="trust-row">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4M12 3l7 4v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V7z"/></svg> Compra segura</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M9 14l-1 8 4-3 4 3-1-8"/></svg> Garantía de 7 días</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg> Privacidad protegida</span>
+      </div>
+      <p class="pay-note">Todo en PDF para leer en el celular, la tablet o la computadora, o para imprimir.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 12. GARANTÍA -->
+<section class="section sec-a">
+  <div class="container">
+    <div class="guar-wrap reveal">
+      <svg class="guar-seal" viewBox="0 0 200 200" role="img" aria-label="Sello de garantía de 7 días">
+        <defs><path id="arcTop" d="M30,100 a70,70 0 0,1 140,0"/><path id="arcBot" d="M38,104 a62,62 0 0,0 124,0"/></defs>
+        <circle cx="100" cy="100" r="94" fill="#1F4D36"/>
+        <circle cx="100" cy="100" r="84" fill="none" stroke="#E7CF8E" stroke-width="2" stroke-dasharray="4 5"/>
+        <circle cx="100" cy="100" r="58" fill="#FBF6EE"/>
+        <text font-family="Inter,sans-serif" font-size="15" font-weight="700" letter-spacing="3" fill="#FBF6EE"><textPath href="#arcTop" startOffset="50%" text-anchor="middle">GARANTÍA</textPath></text>
+        <text font-family="Inter,sans-serif" font-size="13" font-weight="700" letter-spacing="2.5" fill="#FBF6EE"><textPath href="#arcBot" startOffset="50%" text-anchor="middle">SATISFACCIÓN TOTAL</textPath></text>
+        <text x="100" y="104" text-anchor="middle" font-family="Fraunces,serif" font-size="52" font-weight="700" fill="#7A1626">7</text>
+        <text x="100" y="128" text-anchor="middle" font-family="Inter,sans-serif" font-size="15" font-weight="700" letter-spacing="3" fill="#1F4D36">DÍAS</text>
+      </svg>
+      <h3>Garantía de satisfacción de 7 días</h3>
+      <p>Quiero que empieces con total tranquilidad. Si en los primeros 7 días sentís que esta guía no es para vos, pedí el reembolso y te devolvemos el 100 % de tu compra. Sin preguntas incómodas: el riesgo es mío, no tuyo.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 13. AUTORA -->
+<section class="section sec-b">
+  <div class="container">
+    <div class="author-grid">
+      <div class="author-photo reveal">
+        <img src="img/autora.webp" alt="Jabón artesanal navideño envuelto con una etiqueta de Silvi Aura" loading="lazy" width="520" height="272">
+        <span class="sig">Silvi Aura</span>
+      </div>
+      <div class="reveal">
+        <span class="kicker">Quién está detrás de la guía</span>
+        <h2>Silvi Aura</h2>
+        <div class="author-role">Autora de guías prácticas y creativas</div>
+        <p>Creo libros digitales pensados para que aprendas de verdad: claros, visuales y ordenados, para que avances a tu ritmo sin sentirte perdida.</p>
+        <p>En Jabones de Navidad del Mundo reuní los fundamentos que usan las jaboneras profesionales y 30 diseños inspirados en las tradiciones navideñas de distintos países, para que tengas una colección completa lista para regalar o emprender.</p>
+        <ul class="author-creds">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Fundamentos explicados desde cero, con tablas y fórmulas simples</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> 30 modelos con materiales en cantidades exactas</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Un capítulo entero para resolver los problemas más comunes</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 14. PREGUNTAS FRECUENTES -->
+<section class="section sec-a">
+  <div class="narrow">
+    <div class="center reveal">
+      <span class="kicker">Preguntas frecuentes</span>
+      <h2>¿Tenés alguna duda?</h2>
+    </div>
+    <div class="faq">
+      <div class="faq-item"><div class="faq-q">¿Necesito experiencia para hacer los jabones?<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></div><div class="faq-a"><p>No. La guía empieza desde cero: primero aprendés los fundamentos y después arrancás por los modelos de nivel inicial. Cada ficha te indica el nivel, para que avances de a poco.</p></div></div>
+      <div class="faq-item"><div class="faq-q">¿Tengo que usar soda cáustica?<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></div><div class="faq-a"><p>No. Toda la guía trabaja con base de glicerina (la técnica que en inglés se llama melt and pour, «derretir y verter»): no se manipula soda cáustica, no hay que esperar semanas de curado y el jabón está listo para usar en 24 horas.</p></div></div>
+      <div class="faq-item"><div class="faq-q">¿Qué necesito para empezar?<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></div><div class="faq-a"><p>Una olla, una balanza de cocina, un termómetro y moldes de silicona. El capítulo 1 te muestra todas las herramientas, y cada modelo trae la lista de materiales con cantidades exactas.</p></div></div>
+      <div class="faq-item"><div class="faq-q">¿Cómo recibo la guía y los bonos?<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></div><div class="faq-a"><p>Apenas se confirma el pago, recibís el acceso por mail. Son PDF a color que podés leer en el celular, la tablet o la computadora, o imprimir.</p></div></div>
+      <div class="faq-item"><div class="faq-q">¿Puedo vender los jabones que haga?<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></div><div class="faq-a"><p>Para regalar a tu familia y amigas no necesitás nada más. Si querés vender, tené en cuenta que el jabón de tocador es un producto cosmético: el capítulo 8 te explica qué se pide en Argentina y qué averiguar en tu país antes de vender en cantidad.</p></div></div>
+      <div class="faq-item"><div class="faq-q">¿Los precios de venta sirven para mi país?<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></div><div class="faq-a"><p>Los precios de la guía están en dólares y son orientativos: cada país, y cada ciudad, maneja sus propios valores. Usalos como referencia y ajustalos a tu mercado.</p></div></div>
+      <div class="faq-item"><div class="faq-q">Vivo donde la Navidad es en verano, ¿me sirve?<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></div><div class="faq-a"><p>Sí. La guía te explica cómo usar la base de baja sudoración para climas húmedos y calurosos, y cómo guardar tus jabones para que el calor no los arruine. Y la colección Navidad Latina está inspirada en nuestras propias tradiciones.</p></div></div>
+      <div class="faq-item"><div class="faq-q">¿El pago es seguro?<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></div><div class="faq-a"><p>Sí. El pago se procesa en una plataforma segura y cifrada, y tus datos están protegidos en todo momento.</p></div></div>
+      <div class="faq-item"><div class="faq-q">¿Hay garantía?<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></div><div class="faq-a"><p>Sí, tenés 7 días de garantía. Si sentís que la guía no es para vos, pedí el reembolso dentro de ese plazo y te devolvemos el 100 % de tu compra.</p></div></div>
+      <div class="faq-item"><div class="faq-q">¿Qué hago si tengo dudas después de comprar?<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></div><div class="faq-a"><p>Escribime a <a href="mailto:silvi_y@hotmail.com" style="color:var(--color-primary)">silvi_y@hotmail.com</a> y con gusto te ayudo. Además, el capítulo 9 resuelve los problemas más comunes paso a paso.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 15. CTA FINAL -->
+<section class="section sec-d cta-final">
+  <div class="container">
+    <div class="reveal">
+      <span class="kicker">Ese regalo lo vas a crear vos</span>
+      <h2>Esta Navidad, regalá un aroma hecho con tus propias manos</h2>
+      <p>Elegí una colección, hacela completa y mirá la cara de quien abre tu caja. Todo lo que necesitás saber está en esta guía.</p>
+      <a href="https://pay.hotmart.com/W108539330A?checkoutMode=10" class="btn-primary js-pago">Quiero crear mis jabones <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <div class="trust-row">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4M12 3l7 4v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V7z"/></svg> Compra segura</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M9 14l-1 8 4-3 4 3-1-8"/></svg> Garantía de 7 días</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg> Privacidad protegida</span>
+      </div>
+      <p style="margin-top:1.4rem;font-size:var(--text-sm)">USD 11,99, con los 2 bonos de regalo.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 16. LEGAL -->
+<section class="legal">
+  <div class="container">
+    <p>Los resultados pueden variar según la dedicación, la práctica y los materiales de cada persona. Esta guía tiene fines educativos e informativos y no garantiza ingresos por la venta de jabones. Los precios orientativos que aparecen en la guía son estimativos: cada país maneja sus propios valores. Las bases, fragancias y colorantes cambian según el proveedor; ante cualquier diferencia, seguí la ficha de tu proveedor. El jabón de tocador es un producto cosmético: antes de comercializarlo, consultá los requisitos de tu país. Usá solo ingredientes de grado cosmético, hacé una prueba en el antebrazo antes de usar un jabón nuevo y mantené los jabones-postre fuera del alcance de los chicos: son jabones y no son comestibles. Precio expresado en dólares estadounidenses (USD). &nbsp;|&nbsp; <a href="mailto:silvi_y@hotmail.com">Contacto: silvi_y@hotmail.com</a></p>
+  </div>
+</section>
+
+<!-- 17. FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <a class="wordmark" href="#" aria-label="Jabones de Navidad del Mundo, de Silvi Aura">
+      <span class="wm-title">Jabones de Navidad</span>
+      <span class="wm-sub">del Mundo</span>
+      <span class="wm-author">Silvi Aura</span>
+    </a>
+    <div class="sign">¡Feliz Navidad y que tu año venga perfumado de cosas lindas!</div>
+    <div class="footer-links">
+      <a href="https://pay.hotmart.com/W108539330A?checkoutMode=10" class="js-pago">Comprar la guía</a>
+      <a href="mailto:silvi_y@hotmail.com">Contacto</a>
+    </div>
+    <div class="cp">© 2026 Silvi Aura · Jabones de Navidad del Mundo. Todos los derechos reservados.</div>
+  </div>
+</footer>
+
+<!-- BARRA FIJA CELULAR -->
+<div class="sticky" id="sticky">
+  <div class="p">Guía + 2 bonos<b>USD 11,99</b></div>
+  <a href="https://pay.hotmart.com/W108539330A?checkoutMode=10" class="btn-primary js-pago">Comprar ahora</a>
+</div>
+
+<script>
+/* ============================================================
+   LINK DE PAGO: pegá entre las comillas el link de tu checkout
+   de Hotmart (por ejemplo https://pay.hotmart.com/XXXXXXXX).
+   Todos los botones de compra de la página lo usan.
+   ============================================================ */
+const LINK_DE_PAGO = "https://pay.hotmart.com/W108539330A?checkoutMode=10";
+
+if (LINK_DE_PAGO) {
+  document.querySelectorAll('.js-pago').forEach(a => { a.href = LINK_DE_PAGO; });
+}
+document.querySelectorAll('.faq-q').forEach(q => q.addEventListener('click', () => q.parentElement.classList.toggle('open')));
+try {
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), {threshold: .12});
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+} catch (e) { document.querySelectorAll('.reveal').forEach(el => el.classList.add('in')); }
+const st = document.getElementById('sticky'), of = document.getElementById('oferta');
+addEventListener('scroll', () => {
+  const r = of.getBoundingClientRect();
+  const enOferta = r.top < innerHeight && r.bottom > 0;
+  st.classList.toggle('show', scrollY > 700 && !enOferta);
+}, {passive: true});
+</script>
+</body>
+</html>
